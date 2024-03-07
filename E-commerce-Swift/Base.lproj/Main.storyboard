@@ -49,7 +49,7 @@
         <!--Product-->
         <scene sceneID="4Od-1o-izj">
             <objects>
-                <viewController id="3TI-tU-jQP" sceneMemberID="viewController">
+                <viewController id="3TI-tU-jQP" customClass="ProductListViewController" customModule="E_commerce_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4jG-OS-L7q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,53 +62,87 @@
             </objects>
             <point key="canvasLocation" x="1845" y="316"/>
         </scene>
-        <!--Busket-->
+        <!--Product Detail View Controller-->
+        <scene sceneID="zqE-Wx-vos">
+            <objects>
+                <viewController id="iDV-Z1-hb2" customClass="ProductDetailViewController" customModule="E_commerce_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n8t-gU-63S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wl9-IM-AoN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlC-Th-Hd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="302"/>
+        </scene>
+        <!--Favorite-->
         <scene sceneID="BTc-f4-c0f">
             <objects>
-                <viewController id="3xV-Pv-KTH" sceneMemberID="viewController">
+                <viewController id="3xV-Pv-KTH" customClass="FavoriteViewController" customModule="E_commerce_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fn2-mg-T9a">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Op1-xL-ggM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Busket" image="cart" catalog="system" id="SEb-rY-zOm"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heart" catalog="system" id="SEb-rY-zOm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpK-ib-O0B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="943" y="782"/>
         </scene>
+        <!--Busket-->
+        <scene sceneID="HPa-Hs-6ez">
+            <objects>
+                <viewController id="KOQ-TB-oTI" customClass="BusketViewController" customModule="E_commerce_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8hS-Tc-cZH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Z9V-p9-hs9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Busket" image="cart" catalog="system" id="F5Z-gO-qEq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9GR-ec-Epb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="-670"/>
+        </scene>
         <!--Home-->
         <scene sceneID="Dk7-OR-vRn">
             <objects>
-                <viewController title="Home" id="18V-FK-oGS" sceneMemberID="viewController">
+                <viewController title="Home" id="18V-FK-oGS" customClass="HomeViewController" customModule="E_commerce_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DHe-Om-RUB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürünler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRv-hH-BNx">
-                                <rect key="frame" x="16.000000000000004" y="75" width="56.333333333333343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Məhsullar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRv-hH-BNx">
+                                <rect key="frame" x="16" y="75" width="80.666666666666671" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-A1-ivL">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Axtar" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-A1-ivL">
                                 <rect key="frame" x="16" y="113" width="188.66666666666666" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z41-Ab-aQ5">
+                                <rect key="frame" x="208.66666666666666" y="113" width="86.999999999999972" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="slider.vertical.3" catalog="system" title="Filter">
+                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="fgy-aG-day" kind="modal" id="8BQ-KN-fne"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCi-cF-nbt">
                                 <rect key="frame" x="295.66666666666669" y="113" width="77.333333333333314" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="scribble" catalog="system" title="Sort">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
-                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z41-Ab-aQ5">
-                                <rect key="frame" x="208.66666666666666" y="113" width="86.999999999999972" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="slider.vertical.3" catalog="system" title="Filter">
                                     <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
                                 </buttonConfiguration>
                             </button>
@@ -135,6 +169,28 @@
             </objects>
             <point key="canvasLocation" x="1822" y="-377"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="elZ-jk-I46">
+            <objects>
+                <viewController id="fgy-aG-day" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ncc-1C-alU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rcb-dp-q6b">
+                                <rect key="frame" x="0.0" y="124" width="393" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2qM-PO-HKI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yVz-LI-sAJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btC-3Q-sn0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2582" y="-549"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sEb-cu-Eoi">
             <objects>
@@ -149,6 +205,7 @@
                         <segue destination="18V-FK-oGS" kind="relationship" relationship="viewControllers" id="1ut-fi-UOI"/>
                         <segue destination="3TI-tU-jQP" kind="relationship" relationship="viewControllers" id="TTS-6h-tMP"/>
                         <segue destination="3xV-Pv-KTH" kind="relationship" relationship="viewControllers" id="u7d-4Y-B9z"/>
+                        <segue destination="KOQ-TB-oTI" kind="relationship" relationship="viewControllers" id="xqU-Mn-FI5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XwW-X5-gW4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -158,6 +215,7 @@
     </scenes>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="scribble" catalog="system" width="128" height="117"/>
         <image name="slider.vertical.3" catalog="system" width="128" height="110"/>
