@@ -14,7 +14,5 @@ import UIKit
 
 class ProductListWorker
 {
-  func doSomeWork()
-  {
-  }
+    func getList(completion: @escaping(()))
 }

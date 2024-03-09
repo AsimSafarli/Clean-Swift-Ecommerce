@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C18445D2B9C7D8B00ADB7C1 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18445C2B9C7D8B00ADB7C1 /* ProductResponse.swift */; };
 		7C3FD9582B998C0B00D5EC11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9572B998C0B00D5EC11 /* AppDelegate.swift */; };
 		7C3FD95A2B998C0B00D5EC11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9592B998C0B00D5EC11 /* SceneDelegate.swift */; };
 		7C3FD95C2B998C0B00D5EC11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD95B2B998C0B00D5EC11 /* ViewController.swift */; };
@@ -25,36 +26,22 @@
 		7C3FD9822B998D1B00D5EC11 /* ProductDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD97C2B998D1B00D5EC11 /* ProductDetailModels.swift */; };
 		7C3FD9832B998D1B00D5EC11 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD97D2B998D1B00D5EC11 /* ProductDetailViewController.swift */; };
 		7C3FD9842B998D1B00D5EC11 /* ProductDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD97E2B998D1B00D5EC11 /* ProductDetailInteractor.swift */; };
-		7C3FD98C2B998D3200D5EC11 /* BusketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9862B998D3200D5EC11 /* BusketPresenter.swift */; };
-		7C3FD98D2B998D3200D5EC11 /* BusketWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9872B998D3200D5EC11 /* BusketWorker.swift */; };
-		7C3FD98E2B998D3200D5EC11 /* BusketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9882B998D3200D5EC11 /* BusketRouter.swift */; };
-		7C3FD98F2B998D3200D5EC11 /* BusketModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9892B998D3200D5EC11 /* BusketModels.swift */; };
 		7C3FD9902B998D3200D5EC11 /* BusketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD98A2B998D3200D5EC11 /* BusketViewController.swift */; };
-		7C3FD9912B998D3200D5EC11 /* BusketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD98B2B998D3200D5EC11 /* BusketInteractor.swift */; };
 		7C3FD9952B998E0F00D5EC11 /* CustomMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9942B998E0F00D5EC11 /* CustomMainTabBarViewController.swift */; };
-		7C3FD99F2B999B6B00D5EC11 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9992B999B6B00D5EC11 /* FavoritePresenter.swift */; };
-		7C3FD9A02B999B6B00D5EC11 /* FavoriteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD99A2B999B6B00D5EC11 /* FavoriteWorker.swift */; };
-		7C3FD9A12B999B6B00D5EC11 /* FavoriteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD99B2B999B6B00D5EC11 /* FavoriteRouter.swift */; };
-		7C3FD9A22B999B6B00D5EC11 /* FavoriteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD99C2B999B6B00D5EC11 /* FavoriteModels.swift */; };
 		7C3FD9A32B999B6B00D5EC11 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD99D2B999B6B00D5EC11 /* FavoriteViewController.swift */; };
-		7C3FD9A42B999B6B00D5EC11 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD99E2B999B6B00D5EC11 /* FavoriteInteractor.swift */; };
 		7C3FD9AC2B999FF100D5EC11 /* PickerDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9A62B999FF100D5EC11 /* PickerDetailPresenter.swift */; };
 		7C3FD9AD2B999FF100D5EC11 /* PickerDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9A72B999FF100D5EC11 /* PickerDetailWorker.swift */; };
 		7C3FD9AE2B999FF100D5EC11 /* PickerDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9A82B999FF100D5EC11 /* PickerDetailRouter.swift */; };
 		7C3FD9AF2B999FF100D5EC11 /* PickerDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9A92B999FF100D5EC11 /* PickerDetailModels.swift */; };
 		7C3FD9B02B999FF100D5EC11 /* PickerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9AA2B999FF100D5EC11 /* PickerDetailViewController.swift */; };
 		7C3FD9B12B999FF100D5EC11 /* PickerDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9AB2B999FF100D5EC11 /* PickerDetailInteractor.swift */; };
-		7C3FD9B82B99A02F00D5EC11 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9B22B99A02F00D5EC11 /* HomePresenter.swift */; };
-		7C3FD9B92B99A02F00D5EC11 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9B32B99A02F00D5EC11 /* HomeWorker.swift */; };
-		7C3FD9BA2B99A02F00D5EC11 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9B42B99A02F00D5EC11 /* HomeRouter.swift */; };
-		7C3FD9BB2B99A02F00D5EC11 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9B52B99A02F00D5EC11 /* HomeModels.swift */; };
 		7C3FD9BC2B99A02F00D5EC11 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9B62B99A02F00D5EC11 /* HomeViewController.swift */; };
-		7C3FD9BD2B99A02F00D5EC11 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9B72B99A02F00D5EC11 /* HomeInteractor.swift */; };
 		7C3FD9C12B99A15300D5EC11 /* ProductListViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FD9BF2B99A15300D5EC11 /* ProductListViewCellController.swift */; };
 		7C3FD9C22B99A15300D5EC11 /* ProductListViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C3FD9C02B99A15300D5EC11 /* ProductListViewCellController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C18445C2B9C7D8B00ADB7C1 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 		7C3FD9542B998C0B00D5EC11 /* E-commerce-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-commerce-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C3FD9572B998C0B00D5EC11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C3FD9592B998C0B00D5EC11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,31 +62,16 @@
 		7C3FD97C2B998D1B00D5EC11 /* ProductDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailModels.swift; sourceTree = "<group>"; };
 		7C3FD97D2B998D1B00D5EC11 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		7C3FD97E2B998D1B00D5EC11 /* ProductDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInteractor.swift; sourceTree = "<group>"; };
-		7C3FD9862B998D3200D5EC11 /* BusketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketPresenter.swift; sourceTree = "<group>"; };
-		7C3FD9872B998D3200D5EC11 /* BusketWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketWorker.swift; sourceTree = "<group>"; };
-		7C3FD9882B998D3200D5EC11 /* BusketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketRouter.swift; sourceTree = "<group>"; };
-		7C3FD9892B998D3200D5EC11 /* BusketModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketModels.swift; sourceTree = "<group>"; };
 		7C3FD98A2B998D3200D5EC11 /* BusketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketViewController.swift; sourceTree = "<group>"; };
-		7C3FD98B2B998D3200D5EC11 /* BusketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusketInteractor.swift; sourceTree = "<group>"; };
 		7C3FD9942B998E0F00D5EC11 /* CustomMainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainTabBarViewController.swift; sourceTree = "<group>"; };
-		7C3FD9992B999B6B00D5EC11 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
-		7C3FD99A2B999B6B00D5EC11 /* FavoriteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteWorker.swift; sourceTree = "<group>"; };
-		7C3FD99B2B999B6B00D5EC11 /* FavoriteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRouter.swift; sourceTree = "<group>"; };
-		7C3FD99C2B999B6B00D5EC11 /* FavoriteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModels.swift; sourceTree = "<group>"; };
 		7C3FD99D2B999B6B00D5EC11 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
-		7C3FD99E2B999B6B00D5EC11 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
 		7C3FD9A62B999FF100D5EC11 /* PickerDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailPresenter.swift; sourceTree = "<group>"; };
 		7C3FD9A72B999FF100D5EC11 /* PickerDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailWorker.swift; sourceTree = "<group>"; };
 		7C3FD9A82B999FF100D5EC11 /* PickerDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailRouter.swift; sourceTree = "<group>"; };
 		7C3FD9A92B999FF100D5EC11 /* PickerDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailModels.swift; sourceTree = "<group>"; };
 		7C3FD9AA2B999FF100D5EC11 /* PickerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailViewController.swift; sourceTree = "<group>"; };
 		7C3FD9AB2B999FF100D5EC11 /* PickerDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDetailInteractor.swift; sourceTree = "<group>"; };
-		7C3FD9B22B99A02F00D5EC11 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		7C3FD9B32B99A02F00D5EC11 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
-		7C3FD9B42B99A02F00D5EC11 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		7C3FD9B52B99A02F00D5EC11 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
 		7C3FD9B62B99A02F00D5EC11 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		7C3FD9B72B99A02F00D5EC11 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		7C3FD9BF2B99A15300D5EC11 /* ProductListViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewCellController.swift; sourceTree = "<group>"; };
 		7C3FD9C02B99A15300D5EC11 /* ProductListViewCellController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewCellController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C18445B2B9C7D7B00ADB7C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C18445C2B9C7D8B00ADB7C1 /* ProductResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7C3FD94B2B998C0B00D5EC11 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +114,7 @@
 		7C3FD9562B998C0B00D5EC11 /* E-commerce-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				7C18445B2B9C7D7B00ADB7C1 /* Model */,
 				7C3FD9A52B999FDD00D5EC11 /* PickerDetail */,
 				7C3FD9982B999B5700D5EC11 /* Favorite */,
 				7C3FD9962B999A8600D5EC11 /* Home */,
@@ -182,12 +163,7 @@
 		7C3FD9852B998D2000D5EC11 /* Busket */ = {
 			isa = PBXGroup;
 			children = (
-				7C3FD9862B998D3200D5EC11 /* BusketPresenter.swift */,
-				7C3FD9872B998D3200D5EC11 /* BusketWorker.swift */,
-				7C3FD9882B998D3200D5EC11 /* BusketRouter.swift */,
-				7C3FD9892B998D3200D5EC11 /* BusketModels.swift */,
 				7C3FD98A2B998D3200D5EC11 /* BusketViewController.swift */,
-				7C3FD98B2B998D3200D5EC11 /* BusketInteractor.swift */,
 			);
 			path = Busket;
 			sourceTree = "<group>";
@@ -211,12 +187,7 @@
 		7C3FD9962B999A8600D5EC11 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7C3FD9B22B99A02F00D5EC11 /* HomePresenter.swift */,
-				7C3FD9B32B99A02F00D5EC11 /* HomeWorker.swift */,
-				7C3FD9B42B99A02F00D5EC11 /* HomeRouter.swift */,
-				7C3FD9B52B99A02F00D5EC11 /* HomeModels.swift */,
 				7C3FD9B62B99A02F00D5EC11 /* HomeViewController.swift */,
-				7C3FD9B72B99A02F00D5EC11 /* HomeInteractor.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -224,12 +195,7 @@
 		7C3FD9982B999B5700D5EC11 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
-				7C3FD9992B999B6B00D5EC11 /* FavoritePresenter.swift */,
-				7C3FD99A2B999B6B00D5EC11 /* FavoriteWorker.swift */,
-				7C3FD99B2B999B6B00D5EC11 /* FavoriteRouter.swift */,
-				7C3FD99C2B999B6B00D5EC11 /* FavoriteModels.swift */,
 				7C3FD99D2B999B6B00D5EC11 /* FavoriteViewController.swift */,
-				7C3FD99E2B999B6B00D5EC11 /* FavoriteInteractor.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -331,44 +297,30 @@
 				7C3FD95C2B998C0B00D5EC11 /* ViewController.swift in Sources */,
 				7C3FD9822B998D1B00D5EC11 /* ProductDetailModels.swift in Sources */,
 				7C3FD9582B998C0B00D5EC11 /* AppDelegate.swift in Sources */,
-				7C3FD9BD2B99A02F00D5EC11 /* HomeInteractor.swift in Sources */,
 				7C3FD9722B998C6500D5EC11 /* ProductListPresenter.swift in Sources */,
 				7C3FD95A2B998C0B00D5EC11 /* SceneDelegate.swift in Sources */,
-				7C3FD98D2B998D3200D5EC11 /* BusketWorker.swift in Sources */,
-				7C3FD9BA2B99A02F00D5EC11 /* HomeRouter.swift in Sources */,
 				7C3FD9742B998C6500D5EC11 /* ProductListRouter.swift in Sources */,
-				7C3FD98C2B998D3200D5EC11 /* BusketPresenter.swift in Sources */,
 				7C3FD9AF2B999FF100D5EC11 /* PickerDetailModels.swift in Sources */,
-				7C3FD9BB2B99A02F00D5EC11 /* HomeModels.swift in Sources */,
 				7C3FD9BC2B99A02F00D5EC11 /* HomeViewController.swift in Sources */,
 				7C3FD9812B998D1B00D5EC11 /* ProductDetailRouter.swift in Sources */,
-				7C3FD9B92B99A02F00D5EC11 /* HomeWorker.swift in Sources */,
-				7C3FD9A02B999B6B00D5EC11 /* FavoriteWorker.swift in Sources */,
 				7C3FD9AE2B999FF100D5EC11 /* PickerDetailRouter.swift in Sources */,
-				7C3FD98F2B998D3200D5EC11 /* BusketModels.swift in Sources */,
 				7C3FD97F2B998D1B00D5EC11 /* ProductDetailPresenter.swift in Sources */,
 				7C3FD9772B998C6500D5EC11 /* ProductListInteractor.swift in Sources */,
 				7C3FD9842B998D1B00D5EC11 /* ProductDetailInteractor.swift in Sources */,
-				7C3FD98E2B998D3200D5EC11 /* BusketRouter.swift in Sources */,
-				7C3FD9A22B999B6B00D5EC11 /* FavoriteModels.swift in Sources */,
 				7C3FD9C12B99A15300D5EC11 /* ProductListViewCellController.swift in Sources */,
 				7C3FD9902B998D3200D5EC11 /* BusketViewController.swift in Sources */,
+				7C18445D2B9C7D8B00ADB7C1 /* ProductResponse.swift in Sources */,
 				7C3FD9AC2B999FF100D5EC11 /* PickerDetailPresenter.swift in Sources */,
-				7C3FD9912B998D3200D5EC11 /* BusketInteractor.swift in Sources */,
-				7C3FD9A42B999B6B00D5EC11 /* FavoriteInteractor.swift in Sources */,
 				7C3FD9952B998E0F00D5EC11 /* CustomMainTabBarViewController.swift in Sources */,
 				7C3FD9832B998D1B00D5EC11 /* ProductDetailViewController.swift in Sources */,
 				7C3FD9AD2B999FF100D5EC11 /* PickerDetailWorker.swift in Sources */,
 				7C3FD9802B998D1B00D5EC11 /* ProductDetailWorker.swift in Sources */,
-				7C3FD9A12B999B6B00D5EC11 /* FavoriteRouter.swift in Sources */,
 				7C3FD9B12B999FF100D5EC11 /* PickerDetailInteractor.swift in Sources */,
-				7C3FD9B82B99A02F00D5EC11 /* HomePresenter.swift in Sources */,
 				7C3FD9A32B999B6B00D5EC11 /* FavoriteViewController.swift in Sources */,
 				7C3FD9752B998C6500D5EC11 /* ProductListModels.swift in Sources */,
 				7C3FD9762B998C6500D5EC11 /* ProductListViewController.swift in Sources */,
 				7C3FD9B02B999FF100D5EC11 /* PickerDetailViewController.swift in Sources */,
 				7C3FD9732B998C6500D5EC11 /* ProductListWorker.swift in Sources */,
-				7C3FD99F2B999B6B00D5EC11 /* FavoritePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

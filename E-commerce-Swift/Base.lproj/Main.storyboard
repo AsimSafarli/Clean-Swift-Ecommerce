@@ -46,37 +46,6 @@
             </objects>
             <point key="canvasLocation" x="36" y="4"/>
         </scene>
-        <!--Product-->
-        <scene sceneID="4Od-1o-izj">
-            <objects>
-                <viewController id="3TI-tU-jQP" customClass="ProductListViewController" customModule="E_commerce_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4jG-OS-L7q">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="unh-ft-hQN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Product" image="square.grid.3x3.topright.filled" catalog="system" id="WWE-5U-aUw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pAH-dX-3pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1845" y="316"/>
-        </scene>
-        <!--Product Detail View Controller-->
-        <scene sceneID="zqE-Wx-vos">
-            <objects>
-                <viewController id="iDV-Z1-hb2" customClass="ProductDetailViewController" customModule="E_commerce_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="n8t-gU-63S">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wl9-IM-AoN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RlC-Th-Hd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2625" y="302"/>
-        </scene>
         <!--Favorite-->
         <scene sceneID="BTc-f4-c0f">
             <objects>
@@ -127,6 +96,9 @@
                                 <rect key="frame" x="16" y="113" width="188.66666666666666" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="searchProduct:" destination="18V-FK-oGS" eventType="editingDidEnd" id="wbg-L5-ahn"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z41-Ab-aQ5">
                                 <rect key="frame" x="208.66666666666666" y="113" width="86.999999999999972" height="35"/>
@@ -135,6 +107,7 @@
                                     <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="filterProduct:" destination="18V-FK-oGS" eventType="touchUpInside" id="iY5-Bl-BEA"/>
                                     <segue destination="fgy-aG-day" kind="modal" id="8BQ-KN-fne"/>
                                 </connections>
                             </button>
@@ -145,18 +118,29 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                     <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="sortProduct:" destination="18V-FK-oGS" eventType="touchUpInside" id="OEB-4v-QUz"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Je-Nk-PYd" customClass="ProductListViewController" customModule="E_commerce_Swift" customModuleProvider="target">
+                                <rect key="frame" x="20" y="175" width="353" height="628"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OKO-VK-Q2H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rRv-hH-BNx" firstAttribute="top" secondItem="OKO-VK-Q2H" secondAttribute="top" constant="75" id="3pN-JO-fI4"/>
+                            <constraint firstItem="0Je-Nk-PYd" firstAttribute="top" secondItem="OLG-A1-ivL" secondAttribute="bottom" constant="27" id="57g-MT-Vha"/>
                             <constraint firstItem="z41-Ab-aQ5" firstAttribute="leading" secondItem="OLG-A1-ivL" secondAttribute="trailing" constant="4" id="5e2-vK-Ap8"/>
                             <constraint firstItem="nCi-cF-nbt" firstAttribute="centerY" secondItem="OLG-A1-ivL" secondAttribute="centerY" id="Gws-F4-d3L"/>
                             <constraint firstItem="nCi-cF-nbt" firstAttribute="top" secondItem="OLG-A1-ivL" secondAttribute="top" id="IZd-pd-qTh"/>
                             <constraint firstItem="rRv-hH-BNx" firstAttribute="leading" secondItem="OKO-VK-Q2H" secondAttribute="leading" constant="16" id="Q1l-rQ-w6V"/>
+                            <constraint firstItem="OKO-VK-Q2H" firstAttribute="bottom" secondItem="0Je-Nk-PYd" secondAttribute="bottom" id="bat-gh-2Rs"/>
+                            <constraint firstItem="0Je-Nk-PYd" firstAttribute="leading" secondItem="OKO-VK-Q2H" secondAttribute="leading" constant="20" id="eqk-eT-hrj"/>
                             <constraint firstItem="nCi-cF-nbt" firstAttribute="leading" secondItem="z41-Ab-aQ5" secondAttribute="trailing" id="faV-ke-ter"/>
                             <constraint firstItem="OKO-VK-Q2H" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="rRv-hH-BNx" secondAttribute="trailing" constant="335" id="fl7-BK-dg3"/>
+                            <constraint firstItem="OKO-VK-Q2H" firstAttribute="trailing" secondItem="0Je-Nk-PYd" secondAttribute="trailing" constant="20" id="maD-QA-FCX"/>
                             <constraint firstItem="OKO-VK-Q2H" firstAttribute="trailing" secondItem="nCi-cF-nbt" secondAttribute="trailing" constant="20" id="p0d-cU-B3a"/>
                             <constraint firstItem="OLG-A1-ivL" firstAttribute="top" secondItem="rRv-hH-BNx" secondAttribute="bottom" constant="17" id="qS7-eC-Up7"/>
                             <constraint firstItem="OLG-A1-ivL" firstAttribute="leading" secondItem="OKO-VK-Q2H" secondAttribute="leading" constant="16" id="ruR-sy-Tsd"/>
@@ -203,7 +187,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="18V-FK-oGS" kind="relationship" relationship="viewControllers" id="1ut-fi-UOI"/>
-                        <segue destination="3TI-tU-jQP" kind="relationship" relationship="viewControllers" id="TTS-6h-tMP"/>
                         <segue destination="3xV-Pv-KTH" kind="relationship" relationship="viewControllers" id="u7d-4Y-B9z"/>
                         <segue destination="KOQ-TB-oTI" kind="relationship" relationship="viewControllers" id="xqU-Mn-FI5"/>
                     </connections>
@@ -219,7 +202,6 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="scribble" catalog="system" width="128" height="117"/>
         <image name="slider.vertical.3" catalog="system" width="128" height="110"/>
-        <image name="square.grid.3x3.topright.filled" catalog="system" width="128" height="113"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -17,7 +17,7 @@ protocol ProductListDisplayLogic: class
   func displaySomething(viewModel: ProductList.Something.ViewModel)
 }
 
-class ProductListViewController: UIViewController, ProductListDisplayLogic
+class ProductListViewController: UITableView, ProductListDisplayLogic
 {
   var interactor: ProductListBusinessLogic?
   var router: (NSObjectProtocol & ProductListRoutingLogic & ProductListDataPassing)?

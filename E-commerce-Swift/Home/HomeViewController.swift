@@ -66,7 +66,13 @@ class HomeViewController: UIViewController, HomeDisplayLogic
   
   // MARK: View lifecycle
   
-  override func viewDidLoad()
+    @IBAction func sortProduct(_ sender: Any) {
+    }
+    @IBAction func filterProduct(_ sender: Any) {
+    }
+    @IBAction func searchProduct(_ sender: Any) {
+    }
+    override func viewDidLoad()
   {
     super.viewDidLoad()
     doSomething()
